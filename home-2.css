@@ -134,7 +134,7 @@ body.rtl-mode{
 }
  
 .logo span{
-  color:gold;
+  color:#d6b36a;
 }
  
 .nav-links{
@@ -156,7 +156,7 @@ nav a{
 }
  
 .nav-links a:hover{
-  color:goldenrod;
+  color:#d6b36a;
 }
  
 .nav-actions{
@@ -225,7 +225,7 @@ nav a{
 
 .rtl-btn:hover,
 .theme-btn:hover{
-  background:goldenrod;
+  background:#d6b36a;
   transform:translateY(-3px);
 }
  
@@ -333,7 +333,7 @@ nav a{
 
 .primary{
 
-  background:goldenrod;
+  background:#d6b36a;
 
 }
  
@@ -478,7 +478,7 @@ nav a{
 }
 
 .about-content span{
-  color:goldenrod;
+  color:#d6b36a;
   font-weight:600;
   letter-spacing:2px;
   text-align: center;
@@ -510,7 +510,7 @@ nav a{
 .btn{
   display:inline-block;
   padding:14px 35px;
-  background:goldenrod;
+  background:#d6b36a;
   color:white;
   text-decoration:none;
   border-radius:50px;
@@ -565,7 +565,7 @@ nav a{
 
 .counter-box h1{
   font-size:65px;
-  color:goldenrod;
+  color:#d6b36a;
   margin-bottom:15px;
 }
 
@@ -632,7 +632,7 @@ nav a{
 .contact-form button{
   padding:16px;
   border:none;
-  background:goldenrod;
+  background:#d6b36a;
   color:white;
   border-radius:50px;
   cursor:pointer;
@@ -658,7 +658,7 @@ nav a{
 }
 
 .membership-title span{
-  color:goldenrod;
+  color:#d6b36a;
   letter-spacing:3px;
 }
 
@@ -680,13 +680,13 @@ nav a{
 }
 
 .plan-card.active{
-  border:2px solid goldenrod;
+  border:2px solid #d6b36a;
 }
 
 .plan-card h1{
   font-size:60px;
   margin:20px 0;
-  color:goldenrod;
+  color:#d6b36a;
 }
 
 .plan-card ul{
@@ -702,7 +702,7 @@ nav a{
 .plan-card a{
   display:inline-block;
   padding:14px 35px;
-  background:goldenrod;
+  background:#d6b36a;
   color:white;
   text-decoration:none;
   border-radius:50px;
@@ -716,7 +716,7 @@ nav a{
 }
 
 .awards-title span{
-  color:goldenrod;
+  color:#d6b36a;
 }
 
 .awards-title h2{
@@ -737,7 +737,7 @@ nav a{
 }
 
 .award-card h3{
-  color:goldenrod;
+  color:#d6b36a;
   margin-bottom:15px;
   font-size:28px;
 }
@@ -781,7 +781,7 @@ nav a{
 
 .competition-content a{
   padding:14px 35px;
-  background:goldenrod;
+  background:#d6b36a;
   color:white;
   text-decoration:none;
   border-radius:50px;
@@ -864,7 +864,7 @@ nav a{
   transition: 0.3s ease;
 }
 .footer-legal a:hover{
-  color: goldenrod;
+  color: #d6b36a;
 }
  
 
