@@ -98,6 +98,7 @@ body.rtl-mode{
   background:rgba(0,0,0,0.20);
   backdrop-filter:blur(10px);
   transition:0.35s ease;
+  height: 100px;
 }
 
  
@@ -107,10 +108,11 @@ body.rtl-mode{
 }
  
 .logo{
+  padding-top: 30px;
   height: 80px;
   width: 70px;
   font-family:'Outfit', sans-serif;
-  font-size:25px;
+  font-size:18px;
   font-weight:700;
   color:#ffffff;
   letter-spacing:1px;
@@ -153,7 +155,7 @@ nav a{
 .dropdown-menu{
   position:absolute;
   top:70px;
-  left:320px;
+  left:230px;
   width:190px;
  
   background:rgba(17,17,17,0.96);
@@ -572,6 +574,9 @@ tr{
   margin-bottom:30px;
 
 }
+.sd span{
+  color: #d6b36a;
+}
  
 
  
@@ -616,19 +621,33 @@ tr{
   color:white;
 
 }
+
+.footer-bottom{
+  border-top:1px solid #222222;
+  padding-top:25px;
+  color:#777777;
+  display: flex;
+  justify-content: space-between;
+}
+ .footer-legal{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
  
-.copyright{
-
-  text-align:center;
-
-  padding:20px;
-
-  color: white;
-
-  background:black;
-
-  border-top:1px solid rgba(255,255,255,0.1);
-
+ 
+}
+.footer-legal li{
+  list-style: none;
+  color: black;
+ 
+}
+.footer-legal a{
+  color: #777777;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.footer-legal a:hover{
+  color: var(--primary);
 }
  
 
