@@ -106,7 +106,7 @@ body.rtl-mode{
   align-items:center;
   padding:22px 8%;
   z-index:1000;
-  background:rgba(0,0,0,0.20);
+  background:#070707;
   backdrop-filter:blur(10px);
   transition:0.35s ease;
   height: 100px;
@@ -423,7 +423,7 @@ nav a{
     }
 
     .btn-outline:hover{
-      background:#fff;
+      background:#ffff;
       color:#000;
       transform:translateY(-3px);
     }
@@ -468,7 +468,7 @@ nav a{
   grid-template-columns:1fr 1fr;
   gap:60px;
   align-items:center;
-  background:#111;
+  background:#070707;
   color:white;
 }
 
@@ -526,7 +526,7 @@ nav a{
 
 .achievement{
   padding:100px 10%;
-  background:#111;
+  background:#070707;
   color:white;
   text-align:center;
 
@@ -620,7 +620,7 @@ nav a{
 .contact-form textarea{
   padding:18px;
   border:none;
-  background:#1a1a1a;
+  background:black;
   color:white;
   border-radius:10px;
 }
@@ -840,6 +840,8 @@ nav a{
 }
 
 .footer-bottom{
+  padding-left: 80px;
+  padding-right: 85px;
   border-top:1px solid #222222;
   padding-top:25px;
   color:#777777;
