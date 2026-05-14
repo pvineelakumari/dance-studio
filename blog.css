@@ -235,12 +235,344 @@ nav a{
   border-radius: 30px;
   color: white;
 }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+
+.hero{
+    width:100%;
+    height:100vh;
+    background-image: url("images/blog-bg.jfif");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
+
+
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+
+
+.hero-content{
+    position:relative;
+    color:white;
+    max-width:800px;
+}
+
+.hero-content h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    line-height:1.6;
+}
+
+
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:40px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+}
+
  
+.featured-blog{
+    width:100%;
+    padding:80px 10%;
+    background:#f5f5f5;
+}
+
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h1{
+    font-size:45px;
+    color:#111;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    font-size:18px;
+    color:#666;
+}
 
 
 
+.featured-box{
+    display:flex;
+    flex-wrap:wrap;
+    gap:40px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
 
 
+
+.featured-image{
+    flex:1;
+    min-width:300px;
+}
+
+.featured-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+
+
+.featured-content{
+    flex:1;
+    min-width:300px;
+    padding:40px;
+}
+
+.featured-content h2{
+    font-size:32px;
+    margin-bottom:20px;
+    color:#111;
+}
+
+.featured-content p{
+    font-size:18px;
+    color:#666;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+
+
+.image-row{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.image-row img{
+    width:100%;
+    height:120px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+
+@media(max-width:768px){
+
+.featured-content{
+    padding:25px;
+}
+
+.image-row{
+    flex-direction:column;
+}
+
+}
+
+.popular-section{
+    width:100%;
+    padding:80px 10%;
+    background:#f5f5f5;
+}
+
+
+
+.heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.heading h1{
+    font-size:45px;
+    color:#111;
+    margin-bottom:10px;
+}
+
+.heading p{
+    font-size:18px;
+    color:#666;
+}
+
+
+
+.popular-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+
+
+.popular-item{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:#fff;
+    padding:15px 20px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.popular-item:hover{
+    transform:translateX(8px);
+}
+
+
+
+.popular-item img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+
+.popular-content{
+    flex:1;
+}
+
+.popular-content h2{
+    font-size:20px;
+    color:#111;
+    margin-bottom:6px;
+}
+
+.popular-content span{
+    font-size:14px;
+    color:#888;
+}
+
+
+
+@media(max-width:768px){
+
+.heading h1{
+    font-size:35px;
+}
+
+.popular-item{
+    flex-direction:column;
+    text-align:center;
+}
+
+.popular-item img{
+    width:120px;
+    height:120px;
+}
+
+}
+
+.newsletter{
+    width:100%;
+    padding:80px 10%;
+    background:white;
+    text-align:center;
+}
+
+
+
+.newsletter h1{
+    font-size:40px;
+    color:black;
+    margin-bottom:15px;
+}
+
+.newsletter p{
+    font-size:18px;
+    color:black;
+    margin-bottom:30px;
+}
+
+
+
+.news-form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+
+
+.news-form input{
+    width:350px;
+    max-width:100%;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:30px solid black;
+    font-size:16px;
+    background-color: #000000;
+    color: whitesmoke
+    
+}
+
+
+
+.news-form button{
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    background:#d6b36a;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.news-form button:hover{
+    background:#fff;
+    color:#d6b36a;
+}
+
+
+
+@media(max-width:768px){
+
+.newsletter h1{
+    font-size:30px;
+}
+
+.newsletter p{
+    font-size:16px;
+}
+
+}
 
 
 

@@ -6,7 +6,7 @@
  
   <title>Dance Studio</title>
  
-  <link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="dashboard.css">
  
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +17,16 @@
 </head>
  
 <body>
- 
-  
+
 <header>
     <nav class="navbar">
 
            <div class="logo">
-           
+
+            
       <a href="#home" class="logo"> <span>Dance</span>Studio</a>
       </div>
- 
-      <ul class="nav-links">
+       <ul class="nav-links">
           <li class="dropdown">
         <a href="index.html">Home ▾</a>
  
@@ -37,145 +36,101 @@
           
         </ul>
       </li>
-       
-        <li><a href="about.html">About</a></li>
+
+      <li><a href="about.html">About</a></li>
         <li><a href="service.html">Services</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="dashboard.html">Dashboard</a></li>
- 
-      </ul>
- 
-      <div class="nav-actions">
+        </ul>
+
+        <div class="nav-actions">
         <button class="rtl-btn" onclick="toggleRTL()">RTL</button>
         <button class="theme-btn" onclick="toggleTheme()">☾</button>
-        <a href="#contact" class="nav-btn" onclick="document.location='signup.html'">Login</a>
+        <a href="#contact" class="nav-btn"onclick="document.location='signup.html'">Login</a>
       </div>
- 
-    </nav>
+        </nav>
   </header>
 
-  <section class="hero">
+<div class="dashboard">
 
-    <div class="hero-content">
+    <aside class="sidebar">
 
-        <h1>Dance Studio Blog</h1>
+        <h3>Main Menu</h3>
 
-        <p>
-            Latest dance tips, choreography ideas, and studio updates.
-        </p>
+        <ul class="menu">
+            <li>Dashboard</li>
+            <li>Students</li>
+            <li>Classes</li>
+            <li>Instructors</li>
+            <li>Events</li>
+            <li>Payments</li>
+            <li>Reports</li>
+        </ul>
 
-    </div>
+    </aside>
 
-</section>
-
-
-<section class="featured-blog">
-
-    <div class="section-title">
-
-        <h1>Featured Blog</h1>
-
-        <p>Latest dance techniques and choreography inspiration</p>
-
-    </div>
-
-    <div class="featured-box">
+    
+    <main class="main">
 
         
-        <div class="featured-image">
+        <div class="cards">
 
-            <img src="images/blog-image1.jpg" alt="Dance Main">
-
-        </div>
-
-        
-        <div class="featured-content">
-
-            <h2>Express Yourself Through Modern Dance</h2>
-
-            <p>
-                Explore powerful modern dance movements, improve flexibility,
-                and learn creative choreography techniques from expert trainers.
-            </p>
-
-            
-            <div class="image-row">
-
-                <img src="images/dance-2.jpg" alt="Dance 1">
-
-                <img src="images/blog-image3.jpg" alt="Dance 2">
-
+            <div class="card">
+                <h2>Students</h2>
+                <p>350+</p>
             </div>
 
-        </div>
+            <div class="card">
+                <h2>Classes</h2>
+                <p>20</p>
+            </div>
 
-    </div>
+            <div class="card">
+                <h2>Events</h2>
+                <p>15</p>
+            </div>
 
-</section>
-
-<section class="popular-section">
-
-    <div class="heading">
-
-        <h1>Popular Posts</h1>
-
-        <p>Trending dance blogs from our studio</p>
-
-    </div>
-
-    <div class="popular-list">
-
-        
-        <div class="popular-item">
-
-            <img src="images/popular-image1.avif" alt="Post">
-
-            <div class="popular-content">
-
-                <h2>Best Dance Workout for Fitness</h2>
-                <span>Published: 08 May 2026</span>
-
+            <div class="card">
+                <h2>Revenue</h2>
+                <p>₹2,80,000</p>
             </div>
 
         </div>
 
         
-        <div class="popular-item">
+        <div class="grid">
 
-            <img src="images/popular-image2.avif" alt="Post">
+            <div class="box">
+                <h3>Upcoming Events</h3>
+                <p>Wedding choreography and stage shows scheduled this month.</p>
+            </div>
 
-            <div class="popular-content">
-
-                <h2>Wedding Choreography Ideas</h2>
-                <span>Published: 05 May 2026</span>
-
+            <div class="box">
+                <h3>New Enrollments</h3>
+                <p>30 new students joined different dance programs.</p>
             </div>
 
         </div>
 
-    </div>
+        
+        <div class="activity">
 
-</section>
-  <section class="newsletter">
+            <h2>Recent Activity</h2>
 
-    <h1>Subscribe to Our Newsletter</h1>
+            <div class="item">New student joined Hip-Hop class</div>
+            <div class="item">Wedding booking confirmed</div>
+            <div class="item">Instructor schedule updated</div>
+            <div class="item">Monthly report generated</div>
 
-    <p>Get weekly dance tips, updates, and choreography ideas.</p>
+        </div>
 
-    <form class="news-form">
+    </main>
 
-        <input type="email" placeholder="Enter your email">
+</div>
 
-        <button type="submit">Subscribe</button>
-
-    </form>
-
-  </section>
-
-
-  <footer>
+<footer>
  
     <div class="footer">
  
@@ -184,7 +139,6 @@
         <div class="logo">
             <span class="sd">Dance</span>Studio
 </div>
- 
         <p>
           Premium dance studio for luxury artistic performance.
 </p>
@@ -252,9 +206,10 @@
     </div>
  
   </footer>
+  <script src="dashboard.js">
+     
+  </script>
 
-   <script src="blog.js"></script>
-  
 
-  </body>
-  </html>
+</body>
+</html>
