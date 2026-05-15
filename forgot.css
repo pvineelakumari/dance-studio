@@ -13,7 +13,7 @@ body{
  
 
  
-.signup-section{
+.forgot-section{
   min-height:100vh;
  
   display:flex;
@@ -32,9 +32,9 @@ body{
  
 
  
-.signup-box{
+.forgot-container{
   width:100%;
-  max-width:620px;
+  max-width:420px;
  
   background:rgba(20,25,35,0.92);
  
@@ -42,15 +42,18 @@ body{
  
   border-radius:18px;
  
-  padding:20px;
+  padding:24px;
  
   backdrop-filter:blur(12px);
  
   box-shadow:0 8px 25px rgba(0,0,0,0.4);
  
+  text-align:center;
+ 
   animation:fadeUp 1s ease;
  
   transition:0.4s;
+  position: fixed;
 }
  
 
@@ -60,9 +63,10 @@ body{
   justify-content:flex-end;
   gap:8px;
  
-  margin-bottom:10px;
+  margin-bottom:12px;
 }
  
+
  
 .theme-toggle{
   display:flex;
@@ -88,7 +92,7 @@ body{
  
 .theme-toggle:hover{
   transform:translateY(-2px);
-  background:#d6b36a;
+  background:black;
 }
  
 
@@ -119,127 +123,95 @@ body{
 
  
 .logo{
-  text-align:center;
- text-decoration: none;
-  font-size:28px;
+  font-size:30px;
   font-weight:700;
- 
-  margin-bottom:4px;
-  color: white;
+ text-decoration: none;
+  margin-bottom:10px;
+ color: white;
   cursor:pointer;
 }
  
+
 .logo span{
   color:#d6b36a;
 }
  
 
-
  
-
- 
-.signup-box h1{
-  text-align:center;
- 
-  font-size:24px;
+.forgot-container h2{
+  font-size:28px;
  
   color:#ffffff;
  
-  margin-bottom:4px;
+  margin-bottom:8px;
 }
  
 .subtitle{
-  text-align:center;
- 
   color:#9ca3af;
  
-  font-size:12px;
+  font-size:13px;
  
-  margin-bottom:14px;
+  line-height:1.6;
+ 
+  margin-bottom:22px;
 }
  
 
  
-.double-input{
-  display:grid;
+.input-box{
+  position:relative;
  
-  grid-template-columns:repeat(2,1fr);
- 
-  gap:10px;
+  margin-bottom:18px;
 }
  
-
- 
-.input-group{
-  margin-bottom:10px;
-}
- 
-.input-group label{
-  display:block;
- 
-  color:#ffffff;
- 
-  font-size:12px;
-  font-weight:600;
- 
-  margin-bottom:4px;
-}
- 
-.input-group input{
+.input-box input{
   width:100%;
  
-  padding:10px 12px;
+  padding:12px 14px 12px 42px;
+ 
+  border:none;
+  outline:none;
  
   border-radius:10px;
  
-  border:1px solid rgba(255,255,255,0.08);
- 
   background:rgba(255,255,255,0.05);
+ 
+  border:1px solid rgba(255,255,255,0.08);
  
   color:#ffffff;
  
-  font-size:12px;
+  font-size:13px;
  
   transition:0.3s;
 }
  
-.input-group input::placeholder{
+.input-box input::placeholder{
   color:#9ca3af;
 }
  
-.input-group input:focus{
-  outline:none;
- 
+.input-box input:focus{
   border-color:#d6b36a;
 }
  
-
+.input-box i{
+  position:absolute;
  
-.terms{
-  display:flex;
-  align-items:center;
+  left:14px;
+  top:50%;
  
-  gap:6px;
+  transform:translateY(-50%);
  
-  margin-bottom:14px;
- 
-  color:#ffffff;
- 
-  font-size:11px;
-}
- 
-.terms a{
   color:#d6b36a;
  
-  text-decoration:none;
+  font-size:14px;
 }
  
 
  
-.signup-btn{
+.reset-btn{
   width:100%;
  
-  padding:10px;
+  padding:12px;
  
   border:none;
  
@@ -249,7 +221,7 @@ body{
  
   color:#ffffff;
  
-  font-size:13px;
+  font-size:14px;
   font-weight:600;
  
   cursor:pointer;
@@ -257,102 +229,60 @@ body{
   transition:0.3s;
 }
  
-.signup-btn:hover{
-  background:#d6b36a;
-}
+ 
  
 
  
-.divider{
-  display:flex;
-  align-items:center;
+.success-message{
+  display:none;
  
-  gap:8px;
+  margin-top:16px;
  
-  margin:14px 0;
- 
-  color:#9ca3af;
- 
-  font-size:10px;
-}
- 
-.divider::before,
-.divider::after{
-  content:"";
- 
-  flex:1;
- 
-  height:1px;
- 
-  background:rgba(255,255,255,0.1);
-}
- 
-
-.social-buttons{
-  display:grid;
- 
-  grid-template-columns:repeat(2,1fr);
- 
-  gap:8px;
-}
- 
-.social-btn{
-  padding:10px;
+  padding:12px;
  
   border-radius:10px;
  
-  border:1px solid rgba(5, 5, 5, 0.08);
+  background:black;
  
-  background:rgba(8, 8, 8, 0.05);
- 
-  color:#ffffff;
+  color:#d6b36a;
  
   font-size:12px;
-  font-weight:500;
+}
  
-  cursor:pointer;
+
+ 
+.back-login{
+  margin-top:20px;
+}
+ 
+.back-login a{
+  color:#ffffff;
+ 
+  text-decoration:none;
+ 
+  font-size:13px;
  
   transition:0.3s;
 }
  
-.social-btn:hover{
-  background:black;
-}
- 
-
- 
-.login-text{
-  text-align:center;
- 
-  color:#9ca3af;
- 
-  margin-top:14px;
- 
-  font-size:11px;
-}
- 
-.login-text a{
+.back-login a:hover{
   color:#d6b36a;
- 
-  text-decoration:none;
- 
-  font-weight:600;
 }
  
-
+/* ================= LIGHT MODE ================= */
  
 body.light-mode{
   background:#f1f5f9;
 }
  
-body.light-mode .signup-section{
+body.light-mode .forgot-section{
   background:
-  radial-gradient(circle at left,#05050533,transparent 30%),
+  radial-gradient(circle at left,#f4b40033,transparent 30%),
   radial-gradient(circle at right,#00326222,transparent 30%),
   #f1f5f9;
 }
  
-body.light-mode .signup-box{
+body.light-mode .forgot-container{
   background:#ffffff;
   border:1px solid #e2e8f0;
 }
@@ -361,37 +291,26 @@ body.light-mode .logo{
   color:#d6b36a;
 }
  
-body.light-mode .signup-box h1,
-body.light-mode .input-group label,
-body.light-mode .terms{
+body.light-mode .forgot-container h2{
   color:#0f172a;
 }
  
-body.light-mode .subtitle,
-body.light-mode .divider,
-body.light-mode .login-text{
+body.light-mode .subtitle{
   color:#64748b;
 }
  
-body.light-mode .input-group input{
+body.light-mode .input-box input{
   background:#f8fafc;
   color:black;
   border:1px solid #dbeafe;
 }
  
-body.light-mode .input-group input::placeholder{
+body.light-mode .input-box input::placeholder{
   color:#94a3b8;
 }
  
-body.light-mode .social-btn{
-  background:#f8fafc;
-  color:black;
-  border:1px solid #dbeafe;
-}
- 
-body.light-mode .social-btn:hover{
-  background:black;
-  color:#ffffff;
+body.light-mode .back-login a{
+  color:#0f172a;
 }
  
 
@@ -404,8 +323,13 @@ body.rtl .theme-wrapper{
   justify-content:flex-start;
 }
  
-body.rtl .terms{
-  flex-direction:row-reverse;
+body.rtl .input-box i{
+  left:auto;
+  right:14px;
+}
+ 
+body.rtl .input-box input{
+  padding:12px 42px 12px 14px;
 }
  
 
@@ -426,18 +350,14 @@ body.rtl .terms{
  
 
  
-@media(max-width:768px){
+@media(max-width:500px){
  
-  .double-input{
-    grid-template-columns:1fr;
+  .forgot-container{
+    padding:20px;
   }
  
-  .social-buttons{
-    grid-template-columns:1fr;
-  }
- 
-  .signup-box{
-    padding:18px;
+  .forgot-container h2{
+    font-size:24px;
   }
  
 }

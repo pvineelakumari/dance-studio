@@ -308,6 +308,22 @@ nav a{
     transform:translateY(-10px);
 }
 
+plan-card{
+  position:relative;
+}
+
+.popular-badge{
+  position:absolute;
+  top:20px;
+  right:-35px;
+  background:#d6b36a;
+  color:#fff;
+  padding:8px 40px;
+  transform:rotate(45deg);
+  font-size:14px;
+  font-weight:600;
+}
+
 
 .card img{
     width:100%;
@@ -362,6 +378,8 @@ nav a{
 
 
 
+
+
 @media(max-width:768px){
 
 .heading h1{
@@ -412,6 +430,22 @@ nav a{
 
 .event-card:hover{
     transform:translateY(-10px);
+}
+
+.plan-card{
+  position:relative;
+}
+
+.popular-badge{
+  position:absolute;
+  top:20px;
+  right:-35px;
+  background:#d6b36a;
+  color:#fff;
+  padding:8px 40px;
+  transform:rotate(45deg);
+  font-size:14px;
+  font-weight:600;
 }
 
 
@@ -574,6 +608,7 @@ nav a{
 .card:hover{
     transform:translateY(-10px);
 }
+
 
 .card h2{
     font-size:32px;

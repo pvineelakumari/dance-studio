@@ -499,6 +499,21 @@ nav a{
     transform:translateY(-8px);
 }
 
+.event-box{
+   display:inline-block;
+  padding:15px 38px;
+  background:white;
+  color:#d6b36a;
+  text-decoration:none;
+  border-radius:50px;
+  transition:0.3s;
+}
+
+.hero-btn:hover{
+  transform:translateY(-5px);
+}
+
+
 
 
 .event-box img{

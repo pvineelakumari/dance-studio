@@ -235,172 +235,118 @@ nav a{
   border-radius: 30px;
   color: white;
 }
- 
 
 
 .hero{
-    width:100%;
-    height:100vh;
-
-    background:
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('images/contact-image.jfif');
-
+    height: 115px;
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+    url('https://images.unsplash.com/photo-1515169067868-5387ec356754?q=80&w=1400&auto=format&fit=crop');
+    display: flex;
     background-size:cover;
-    background-position:center;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
+    background-position:top center;
+    background-repeat: no-repeat;
+    padding:250px 8%;
     text-align:center;
-    padding:20px;
-}
+    color:#fff;
+    margin-top: 85px;
+    justify-content: center;
+    align-items: center;
+    
 
+}
 .hero-content{
-    color:white;
-    max-width:800px;
-}
-
-.hero-content h1{
-    font-size:70px;
-    margin-bottom:20px;
-    letter-spacing:2px;
-}
-
-.hero-content p{
-    font-size:22px;
-    line-height:1.7;
+    color: #000000;
+    text-align: center;
 }
 
 
-
-@media(max-width:768px){
-
-.hero-content h1{
-    font-size:45px;
+.hero h1{
+    font-size:52px;
+    margin-bottom:10px;
+    color: whitesmoke;
 }
 
-.hero-content p{
+.hero p{
     font-size:18px;
+    color:whitesmoke;
 }
+
+.blog-section{
+    padding:90px 8%;
+    background-color: white;
+}
+
+
+
+.blog-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+    margin-bottom:80px;
+}
+
+
+
+.blog-image img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+.blog-content h2{
+    font-size:38px;
+    color:#d6b36a;
+    margin-bottom:20px;
+    line-height:1.3;
+}
+
+.blog-content p{
+    font-size:16px;
+    color:#555;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+
+
+.blog-content ul{
+    padding-left:20px;
+}
+
+.blog-content ul li{
+    margin-bottom:10px;
+    color:#333;
+}
+
+
+
+.reverse{
+    direction:rtl;
+}
+
+.reverse .blog-content{
+    direction:ltr;
+}
+
+
+
+@media(max-width:900px){
+
+    .blog-row{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
 
 }
 
-.contact-info{
-  padding:100px 0;
-  background-color: #f8f5ef;
-}
- 
-.info-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:30px;
-  margin-left: 100px;
-}
- 
-.info-box{
-  background:#f8fafc;
-  border-radius:20px;
-  text-align:center;
-  transition:0.4s;
-  width: 200px;
-}
- 
-.info-box:hover{
-  transform:translateY(-10px);
-}
- 
-.info-box img{
-  width:30px;
-  height:70px;
-  margin:auto;
-  margin-bottom:20px;
-}
- 
-.info-box h3{
-  color:#003262;
-  margin-bottom:15px;
-}
- 
-.contact-form-section{
-  padding:100px 0;
-  background:#f8fafc;
-}
-.section-title h2{
-  color: #000000;
-}
- 
-.form-container{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:50px;
-  align-items:center;
-}
- 
-.form-image img{
-  border-radius:20px;
-}
- 
-.contact-form h2{
-  font-size:  25px;
-  color:black;
-  margin-bottom:25px;
-}
- 
-.contact-form form{
-  display:flex;
-  flex-direction:column;
-  gap:20px;
-  
-}
- 
-.contact-form input,
-.contact-form textarea{
-  padding:10px;
-  border:1px solid #d1d5db;
-  border-radius:10px;
-  font-family:'Poppins',sans-serif;
-}
- 
-.contact-form textarea{
-  resize:none;
-  height:150px;
-}
- 
-.contact-form button{
-  padding:15px;
-  border:none;
-  border-radius:10px;
-  background:#f4b400;
-  color:#ffffff;
-  font-size:16px;
-  cursor:pointer;
-}
- 
 
-.map-section{
-  padding:100px 0;
-  background:#f8fafc;
-}
- 
-.map-image{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
- 
-.map-image iframe{
-  width:100%;
-  max-width:1000px;
-  height:450px;
-  border-radius:20px;
-  border:none;
-}
-.section-title h2{
-  color: #000000;
-
-}
 
 .footer{
 
@@ -471,7 +417,7 @@ nav a{
   transition: 0.3s ease;
 }
 .footer-legal a:hover{
-  color: var(--primary);
+  color: #d6b36a;
 }
  
 
@@ -479,7 +425,6 @@ nav a{
 @media(max-width:900px){
  
   nav ul{
-
     display:none;
 
   }
@@ -499,8 +444,7 @@ nav a{
   .section-title{
 
     font-size:3rem;
-
-  }
+     }
  
   .cta h2{
 
@@ -509,8 +453,4 @@ nav a{
   }
 
 }
- 
-
- 
-
  

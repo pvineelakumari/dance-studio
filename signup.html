@@ -17,15 +17,42 @@
   <link rel="stylesheet" href="signup.css">
  
 </head>
+
+  <link rel="stylesheet" href="signup.css">
+ 
+</head>
  
 <body>
+ 
+<!-- ================= SIGNUP SECTION ================= -->
  
 <section class="signup-section">
  
   <div class="signup-box">
  
-    
+    <!-- THEME + RTL BUTTONS -->
  
+    <div class="theme-wrapper">
+ 
+      <button class="theme-toggle" id="themeToggle">
+ 
+        <i class="fa-solid fa-moon"></i>
+ 
+        <span></span>
+ 
+      </button>
+ 
+      <button class="rtl-toggle" id="rtlToggle">
+ 
+        RTL
+ 
+      </button>
+ 
+    </div>
+ 
+    <!-- LOGO -->
+ 
+      
     <div class="logo" onclick="document.location='index.html'">
 
      <a href = "#home" class="logo"> <span>Dance</span>Studio</a>
@@ -33,15 +60,21 @@
  
     </div>
  
-  
+ 
+    <!-- TITLE -->
  
     <h1>Create Account</h1>
  
     <p class="subtitle">
-      Start your dance journey with us today
+      Join SolarTech and start your renewable energy journey.
+    </p>
     </p>
  
+    <!-- FORM -->
+ 
     <form>
+ 
+      <!-- NAME -->
  
       <div class="double-input">
  
@@ -49,7 +82,7 @@
  
           <label>First Name</label>
  
-          <input type="text" placeholder="Enter first name">
+          <input type="text" placeholder="First name">
  
         </div>
  
@@ -57,33 +90,33 @@
  
           <label>Last Name</label>
  
-          <input type="text" placeholder="Enter last name">
+          <input type="text" placeholder="Last name">
  
         </div>
  
       </div>
  
-      
+      <!-- EMAIL -->
  
       <div class="input-group">
  
         <label>Email Address</label>
  
-        <input type="email" placeholder="Enter your email">
+        <input type="email" placeholder="Enter email">
  
       </div>
  
-    
+      <!-- PHONE -->
  
       <div class="input-group">
  
         <label>Phone Number</label>
  
-        <input type="tel" placeholder="Enter phone number">
+        <input type="tel" placeholder="Phone number">
  
       </div>
  
-  
+      <!-- PASSWORD -->
  
       <div class="double-input">
  
@@ -91,7 +124,7 @@
  
           <label>Password</label>
  
-          <input type="password" placeholder="Create password">
+          <input type="password" placeholder="Password">
  
         </div>
  
@@ -99,28 +132,33 @@
  
           <label>Confirm Password</label>
  
-          <input type="password" placeholder="Confirm password">
+          <input type="password" placeholder="Confirm">
  
         </div>
  
       </div>
  
-      
+      <!-- TERMS -->
  
       <div class="terms">
  
         <input type="checkbox">
  
         <p>
+ 
           I agree to the
-          <a href="#">Terms & Conditions</a>
-          and
+ 
+          <a href="#">Terms</a>
+ 
+          &
+ 
           <a href="#">Privacy Policy</a>
+ 
         </p>
  
       </div>
  
-      
+      <!-- BUTTON -->
  
       <button class="signup-btn">
  
@@ -130,7 +168,7 @@
  
     </form>
  
-    
+    <!-- DIVIDER -->
  
     <div class="divider">
  
@@ -138,27 +176,31 @@
  
     </div>
  
-    
+    <!-- SOCIAL BUTTONS -->
  
     <div class="social-buttons">
  
       <button class="social-btn">
+ 
         Google
+ 
       </button>
  
       <button class="social-btn">
+ 
         Facebook
+ 
       </button>
  
     </div>
  
-    
+    <!-- LOGIN -->
  
     <p class="login-text">
  
       Already have an account?
  
-      <a href="#" onclick="document.location='login.html'">Login</a>
+      <a href="login.html">Login</a>
  
     </p>
  
@@ -166,7 +208,26 @@
  
 </section>
  
+<!-- ================= SCRIPT ================= -->
+ 
+<script src="signup.js"></script>
+ 
 </body>
  
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  

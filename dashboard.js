@@ -1,23 +1,60 @@
+// ================= SELECT ELEMENTS =================
 
-function toggleRTL() {
-    document.body.classList.toggle("rtl-mode");
-}
+const body = document.body;
+
+const themeToggle = document.getElementById("themeToggle");
+
+const rtlToggle = document.getElementById("rtlToggle");
 
 
-function toggleTheme() {
-    document.body.classList.toggle("dark-mode");
+// ================= DARK MODE =================
 
-    let themeBtn = document.querySelector(".theme-btn");
+themeToggle.addEventListener("click", () => {
 
-    if(document.body.classList.contains("dark-mode")){
-        themeBtn.innerHTML = "☀";
-    } else {
-        themeBtn.innerHTML = "☾";
+    body.classList.toggle("dark-mode");
+
+    const icon = themeToggle.querySelector("i");
+
+    if(body.classList.contains("dark-mode")){
+
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+
+    }else{
+
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+
     }
-}
 
-window.addEventListener("scroll", function () {
-    let navbar = document.querySelector(".navbar");
+});
 
-    navbar.classList.toggle("scrolled", window.scrollY > 50);
+
+// ================= RTL MODE =================
+
+rtlToggle.addEventListener("click", () => {
+
+    body.classList.toggle("rtl");
+
+});
+
+
+// ================= ACTIVE SIDEBAR =================
+
+const menuItems = document.querySelectorAll(".sidebar ul li");
+
+menuItems.forEach(item => {
+
+    item.addEventListener("click", () => {
+
+        menuItems.forEach(remove => {
+
+            remove.classList.remove("active");
+
+        });
+
+        item.classList.add("active");
+
+    });
+
 });

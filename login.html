@@ -3,32 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dance Studio</title>
     <link rel="stylesheet" href="login.css">
+
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ 
+  <!-- FONT AWESOME -->
+ 
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
+  <!-- CSS -->
+ 
+  <link rel="stylesheet" href="login.css">
+ 
 </head>
+ 
 <body>
-
-
-    <section class="login-section">
+ 
+<!-- ================= LOGIN SECTION ================= -->
+ 
+<section class="login-section">
  
   <div class="login-box">
  
-   
+    <!-- THEME + RTL BUTTONS -->
  
-    <div class="logo">
+    <div class="theme-wrapper">
+ 
+      <!-- THEME BUTTON -->
+ 
+      <button class="theme-toggle" id="themeToggle">
+ 
+        <i class="fa-solid fa-moon"></i>
+ 
+        <span></span>
+ 
+      </button>
+ 
+      <!-- RTL BUTTON -->
+ 
+      <button class="rtl-toggle" id="rtlToggle">
+ 
+        RTL
+ 
+      </button>
+ 
+    </div>
+ 
+    <!-- LOGO -->
+ 
+    <div class="logo" onclick="document.location='index.html'">
  
       <a href="#home" class="logo" onclick="document.location='index.html'"> <span>Dance</span>Studio</a>
       
  
     </div>
  
+    <!-- TITLE -->
+ 
     <h1>Welcome Back</h1>
  
     <p class="subtitle">
-       Login to continue
+      Login to continue your dance journey.
     </p>
  
+    <!-- FORM -->
+ 
     <form>
+ 
+      <!-- EMAIL -->
  
       <div class="input-group">
  
@@ -42,7 +89,7 @@
  
       </div>
  
-      
+      <!-- PASSWORD -->
  
       <div class="input-group">
  
@@ -56,7 +103,7 @@
  
       </div>
  
-    
+      <!-- OPTIONS -->
  
       <div class="options">
  
@@ -68,11 +115,11 @@
  
         </div>
  
-        <a href="#">Forgot Password?</a>
+        <a href="forgot.html">Forgot Password?</a>
  
       </div>
  
-    
+      <!-- LOGIN BUTTON -->
  
       <button class="login-btn">
  
@@ -82,7 +129,7 @@
  
     </form>
  
-    
+    <!-- DIVIDER -->
  
     <div class="divider">
  
@@ -90,7 +137,7 @@
  
     </div>
  
-
+    <!-- SOCIAL BUTTONS -->
  
     <div class="social-buttons">
  
@@ -104,19 +151,45 @@
  
     </div>
  
-    
+    <!-- SIGNUP -->
  
     <p class="signup-text">
  
       Don't have an account?
  
+      <a href="signup.html">Create Account</a>
       <a href="#" onclick="document.location='signup.html'">Create Account</a>
+ 
  
     </p>
  
   </div>
  
 </section>
+ 
+<!-- ================= SCRIPT ================= -->
+ 
+<script src="login.js"></script>
+ 
+</body>
+ 
+</html>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
    
-    </body>
-    </html>
+ 
+    
