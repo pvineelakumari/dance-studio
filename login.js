@@ -1,5 +1,4 @@
  
-  // ================= THEME MODE =================
  
   const themeToggle = document.getElementById("themeToggle");
  
@@ -23,7 +22,7 @@
  
   });
  
-  // ================= RTL MODE =================
+  
  
   const rtlToggle = document.getElementById("rtlToggle");
  

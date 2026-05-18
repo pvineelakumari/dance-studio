@@ -12,7 +12,7 @@ const forgotForm = document.getElementById("forgotForm");
  
   });
  
-  // ================= THEME MODE =================
+  
  
   const themeToggle = document.getElementById("themeToggle");
  
@@ -36,7 +36,7 @@ const forgotForm = document.getElementById("forgotForm");
  
   });
  
-  // ================= RTL MODE =================
+  
  
   const rtlToggle = document.getElementById("rtlToggle");
  

@@ -1,4 +1,4 @@
-// ================= SELECT ELEMENTS =================
+
 
 const body = document.body;
 
@@ -7,7 +7,7 @@ const themeToggle = document.getElementById("themeToggle");
 const rtlToggle = document.getElementById("rtlToggle");
 
 
-// ================= DARK MODE =================
+
 
 themeToggle.addEventListener("click", () => {
 
@@ -30,7 +30,6 @@ themeToggle.addEventListener("click", () => {
 });
 
 
-// ================= RTL MODE =================
 
 rtlToggle.addEventListener("click", () => {
 
@@ -39,7 +38,7 @@ rtlToggle.addEventListener("click", () => {
 });
 
 
-// ================= ACTIVE SIDEBAR =================
+
 
 const menuItems = document.querySelectorAll(".sidebar ul li");
 
